@@ -52,7 +52,9 @@ echo "*************************************"
 echo "Start network"
 echo "--------------------"
 
+if [ -f 'docker-compose.yml' ] ; then
 rm docker-compose.yml
+fi
 touch docker-compose.yml
 
 echo "Generating docker-compose.yml ..."
